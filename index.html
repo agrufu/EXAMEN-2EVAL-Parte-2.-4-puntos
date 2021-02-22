@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xml:lang="es-es" lang="es-es" >
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Agustin Rueda" />
+		<title>UniWebsidad TIC</title>
+		<link rel="stylesheet" href="estilo.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	</head>
+
+	<body>
+		<header>
+			<div id="header">
+				<h1>UniWebsidad TIC</h1>
+				<cite><em>Aut doce, aut disce, aut discede</em> (Enseña, aprende o déjalo)</cite>
+				<div clas="logoBlock">
+					<a href="#"><img class="logoBlock" src="img/lema.PNG" alt="Disce aut Discede" id="logoImg" /></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="https://www.google.es">Google</a></li>
+						<li><a href="https://es.yahoo.com/">Yahoo!</a></li>
+						<li><a href="https://www.bing.com/?cc=es">Bing</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="page">
+			<main class="contenido">
+				<article>
+					<h2>¿Qué es HTML?</h2>
+					<section>
+						<table>
+							<tbody>
+								<tr>
+									<th><img class="imagen" src="img/html5.jpg"></th>
+									<th><img class="imagen" src="img/css.png"></th>
+								</tr>
+							</tbody>
+						</table>
+						<h3>Las Etiquetas</h3>
+						<div>
+							<details>
+								<summary>
+									<p>Las etiquetas de HTML son fragmentos de texto rodeados por corchetes angulares <code>&lt; &gt;</code>, que tienen funciones y usos específicos y se utilizan para escribir código HTML.</p></summary>
+								<p>Las etiquetas o tags son la forma de escribir código HTML.</p>
+								<p>En HTML existen etiquetas de apertura y etiquetas de cierre, tienen la forma: <code>&lt;etiqueta&gt; &lt;/etiqueta&gt;</code>. Donde <code>&lt;etiqueta&gt;</code> es la etiqueta de apertura y <code>&lt;/etiqueta&gt;</code> es la etiqueta de cierre indicada por la diagonal. HTML tiene definidas gran variedad de etiquetas para distintos usos.</p>
+								<p>Aunque la mayoría de las etiquetas tienen su etiqueta de apertura y etiqueta de cierre, es importante aclarar que no todas las etiquetas tienen su correspondiente etiqueta de cierre.</p>
+								<p>Algunos ejemplos de etiquetas son:</p>
+
+								<table><caption>Etiquetas con etiqueta de cierre</caption>
+									<tbody>
+										<tr>
+											<th>Apertura</th>
+											<th>Cierre</th>
+										</tr>
+										<tr>
+											<td><code>&lt;html&gt;</code></td>
+											<td><code>&lt;/html&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>&lt;head&gt;</code></td>
+											<td><code>&lt;/head&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>&lt;body&gt;</code></td>
+											<td><code>&lt;/body&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>&lt;p&gt;</code></td>
+											<td><code>&lt;/p&gt;</code></td>
+										</tr>
+									</tbody>
+								</table>
+								<p>La etiqueta de apertura y la de cierre son las misma con la única diferencia de la diagonal "/" , es necesario la etiqueta de cierre para limitar el campo de acción de la etiqueta, por ejemplo a etiqueta <code>&lt;p&gt;</code> nos indica el inicio de un párrafo de texto y una vez que se escribe la etiqueta de apertura el navegador tomará como párrafo todo el texto que se encuentre después de dicha etiqueta hasta toparse con la etiqueta de cierre <code>&lt;/p&gt;</code> y así con las demás etiquetas según la función de cada una, la mayoría de las etiquetas de HTML son etiquetas de este tipo.</p>
+								<table><caption>Etiquetas sin etiqueta de cierre</caption>
+									<tbody>
+										<tr>
+											<th>Etiqueta</th>
+										</tr>
+										<tr>
+											<td><code>&lt;br&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>&lt;img&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>&lt;hr&gt;</code></td>
+										</tr>
+										<tr>
+											<td><code>&lt;input&gt;</code></td>
+										</tr>
+									</tbody>
+								</table>
+								<p>Este segundo grupo de etiquetas no requieren de una etiqueta de cierre debido a que su campo de acción está limitado al lugar en donde se incluye la etiqueta.</p>
+								<p>En el primer ejemplo vemos la etiqueta <code>&lt;br&gt;</code> que sirve para indica un salto de linea, creo que es fácil deducir porque no necesita etiqueta de cierre, pues es un elemento muy simple y el navegador no necesita que le digamos hasta donde "limitar" el campo de acción de esta etiqueta pues los saltos de linea son solo eso "un cambio de renglón y ya", si queremos mas de un salto de linea simplemente escribimos varios <code>&lt;br&gt;</code> seguidos, la segunda etiqueta <code>&lt;img&gt;</code> sirve para insertar una imagen en la página tampoco necesita etiqueta de cierre, ya que la etiqueta se debe ubicar en el lugar en donde queramos insertar la imagen, pero hace falta algo mas para completar la etiqueta ya que un simple "img" no nos dice nada acerca de la imagen, para ello existen los atributos.</p>
+							</details>
+							<div><p><span>Por <em>Agustín Rueda</em></span>  <span>hace 1 semana</span></p></div>
+						</div>
+					</section>
+					<section>
+						<h3>Atributos de etiquetas.</h3>
+						<details>
+							<summary>
+								<p>Las etiquetas tienen atributos que nos sirven para especificar ciertos detalles de esa etiqueta, por ejemplo, especificar un color de texto o de fondo, el ancho y alto de algún elemento, su alineación, la ubicación de un documento o imagen, etc.</p></summary>
+							<p>El segundo caso del ejemplo anterior vimos que <code>&lt;img&gt;</code> sirve para insertar una imagen, pero para que la etiqueta funcione necesita de sus atributos, por medio de estos le daremos uso a la etiqueta.</p>
+							<p>Los atributos se escriben dentro de la etiqueta de la siguiente forma:</p>
+							<div class="cajacode"><code>&lt;etiqueta atributo1="algo" atributo2="algo"&gt;</code></div>
+							<p>Ahora volviendo al ejemplo de la etiqueta <code>&lt;img&gt;</code> es necesario indicar en forma de un atributo la dirección y el nombre de la imagen que queremos que se muestre, esto de la siguiente manera:</p>
+							<div class="cajacode"><code>&lt;img src="/carpeta/mi_imagen.jpg"&gt;</code></div>
+							<p>Con lo anterior nuestra etiqueta <code>&lt;img&gt;</code> ya podrá mostrar la imagen deseada.</p>
+							<p>Hay atributos específicos para cada etiqueta, en este ejemplo mostramos la etiqueta <code>&lt;img&gt;</code> con el mínimo requerido, pero puede llevar mas atributos, que no mencionaré aquí pues no es el tema a tratar, pero si hay que decir que a cualquier etiqueta de HTML se le puede agregar atributos, para algunas etiquetas como esta, será algo forzoso agregar el atributo, pero para otras podrá ser algo opcional, sin embargo, las etiquetas y sus atributos son la base del lenguaje HTML, y por medio de estas es como se construye una página web.</p></details>
+						<div><p><span>Por <em>Pepito el de los Palotes</em></span>  <span>hace 1 semana</span></p></div>
+					</section>
+					<section>
+						<h3>Etiquetas de HTML.</h3>
+						<details>
+							<summary>
+								<p>En el siguiente listado se pueden ver algunas de las etiquetas más habituales de HTML.</p>
+							</summary>
+							<table class="tabla">
+								<thead>
+									<tr>
+										<th>Etiqueta</th>
+										<th>Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>&lt;!-- --&gt;</td>
+										<td>Para escribir comentarios en HTML.</td>
+									</tr>
+									<tr>
+										<td>&lt;!DOCTYPE&gt;</td>
+										<td>Declaración del tipo de documento.</td>
+									</tr>
+									<tr>
+										<td>&lt;a&gt;</td>
+										<td>Incluir enlaces (links) hacia otras páginas o documentos.</td>
+									</tr>
+									<tr>
+										<td>&lt;abbr&gt;</td>
+										<td>Indica una abreviación o acrónimo.</td>
+									</tr>
+									<tr>
+										<td>&lt;acronym&gt;</td>
+										<td>Indica un acrónimo.</td>
+									</tr>
+									<tr>
+										<td>&lt;address&gt;</td>
+										<td>Incluir información de contacto.</td>
+									</tr>
+									<tr>
+										<td>&lt;area&gt;</td>
+										<td>Define área de una imágen, dónde se puede hacer clic.</td>
+									</tr>
+									<tr>
+										<td>&lt;article&gt;</td>
+										<td>Indica la hubicación de un artículo.</td>
+									</tr>
+									<tr>
+										<td>&lt;aside&gt;</td>
+										<td>Indicar una barra lateral</td>
+									</tr>
+									<tr>
+										<td>&lt;audio&gt;</td>
+										<td>Inserta audio.</td>
+									</tr>
+									<tr>
+										<td>&lt;b&gt;</td>
+										<td>Convierte el texto a negritas.</td>
+									</tr>
+									<tr>
+										<td>&lt;base&gt;</td>
+										<td>Definir una URL raíz para los enlaces relativos de nuestra página.</td>
+									</tr>
+									<tr>
+										<td>&lt;basefont&gt;</td>
+										<td>Especifica tamaño, color y fuente por defecto de la página.</td>
+									</tr>
+									<tr>
+										<td>&lt;bdi&gt;</td>
+										<td>Aisla parte de un texto que podría estar en otro idioma o formato.</td>
+									</tr>
+									<tr>
+										<td>&lt;bdo&gt;</td>
+										<td>Cambia la dirección del texto.</td>
+									</tr>
+									<tr>
+										<td>&lt;big&gt;</td>
+										<td>Aumenta el tamaño del texto.</td>
+									</tr>
+									<tr>
+										<td>&lt;blockquote&gt;</td>
+										<td>Citar contenido de otro sitio web dentro de un bloque.</td>
+									</tr>
+									<tr>
+										<td>&lt;body&gt;</td>
+										<td>Etiqueta que define el cuerpo de un documento HTML.</td>
+									</tr>
+									<tr>
+										<td>&lt;br&gt;</td>
+										<td>Indica una salto de línea.</td>
+									</tr>
+									<tr>
+										<td>&lt;button&gt;</td>
+										<td>Crear un botón en donde se puede hacer clic.</td>
+									</tr>
+									<tr>
+										<td>&lt;canvas&gt;</td>
+										<td>Etiqueta para definir un contenedor o lienzo para crear gráficos.</td>
+									</tr>
+									<tr>
+										<td>&lt;caption&gt;</td>
+										<td>Define el título de una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;center&gt;</td>
+										<td>Centra el contenido.</td>
+									</tr>
+									<tr>
+										<td>&lt;cite&gt;</td>
+										<td>Cita o referencia de algún libro, película, artículo o algún trabajo de otro autor.</td>
+									</tr>
+									<tr>
+										<td>&lt;code&gt;</td>
+										<td>Indica que el texto es código fuente de algún lenguaje informático.</td>
+									</tr>
+									<tr>
+										<td>&lt;col&gt;</td>
+										<td>Especifíca propiedades de atributos de las columnas de una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;colgroup&gt;</td>
+										<td>Define un grupo de columnas de una tabla para darles formato.</td>
+									</tr>
+									<tr>
+										<td>&lt;datalist&gt;</td>
+										<td>Crea una lista de opciónes para una caja de texto input.</td>
+									</tr>
+									<tr>
+										<td>&lt;dd&gt;</td>
+										<td>Define un término en una lista de definiciones.</td>
+									</tr>
+									<tr>
+										<td>&lt;del&gt;</td>
+										<td>Indica invalidez a un fragmento de texto tachandolo con una línea horizontal.</td>
+									</tr>
+									<tr>
+										<td>&lt;details&gt;</td>
+										<td>Especifica detalles que el usuario puede desplegar u ocultar.</td>
+									</tr>
+									<tr>
+										<td>&lt;dfn&gt;</td>
+										<td>Marca un término o definición.</td>
+									</tr>
+									<tr>
+										<td>&lt;dialog&gt;</td>
+										<td>Mostrar una caja de diálogo.</td>
+									</tr>
+									<tr>
+										<td>&lt;dir&gt;</td>
+										<td>Define una lista de directorios.</td>
+									</tr>
+									<tr>
+										<td>&lt;div&gt;</td>
+										<td>Crea un bloque.</td>
+									</tr>
+									<tr>
+										<td>&lt;dl&gt;</td>
+										<td>Define una lista de definiciones.</td>
+									</tr>
+									<tr>
+										<td>&lt;dt&gt;</td>
+										<td>Define un término en una lista de definiciones.</td>
+									</tr>
+									<tr>
+										<td>&lt;em&gt;</td>
+										<td>Enfatizar parte del texto.</td>
+									</tr>
+									<tr>
+										<td>&lt;embed&gt;</td>
+										<td>Crea un contenedor para una aplicación externa.</td>
+									</tr>
+									<tr>
+										<td>&lt;fieldset&gt;</td>
+										<td>Agrupa campos de un formulario relacionados entre si.</td>
+									</tr>
+									<tr>
+										<td>&lt;figcaption&gt;</td>
+										<td>Escribir una leyenda o texto asociado a una figura o imagen.</td>
+									</tr>
+									<tr>
+										<td>&lt;figure&gt;</td>
+										<td>Define un contenedor de figuras como imágenes, fotos, diagramas, etc.</td>
+									</tr>
+									<tr>
+										<td>&lt;font&gt;</td>
+										<td>Da formato al texto (fuente, tamaño, color, etc.).</td>
+									</tr>
+									<tr>
+										<td>&lt;footer&gt;</td>
+										<td>Define el pie de página.</td>
+									</tr>
+									<tr>
+										<td>&lt;form&gt;</td>
+										<td>Para definir un formulario.</td>
+									</tr>
+									<tr>
+										<td>&lt;frame&gt;</td>
+										<td>Define una ventana o frame de una página externa dentro de un frameset.</td>
+									</tr>
+									<tr>
+										<td>&lt;frameset&gt;</td>
+										<td>Define un frameset dentro del cual puede haber varios frames.</td>
+									</tr>
+									<tr>
+										<td>&lt;h1&gt; ... &lt;h6&gt;</td>
+										<td>Encabezados de HTML</td>
+									</tr>
+									<tr>
+										<td>&lt;head&gt;</td>
+										<td>Etiqueta que define la cabecera de un documento HTML.</td>
+									</tr>
+									<tr>
+										<td>&lt;header&gt;</td>
+										<td>Para indicar el encabezado de una página.</td>
+									</tr>
+									<tr>
+										<td>&lt;hr&gt;</td>
+										<td>Indica un cambio en la temática de la página y queda señalado con una línea horizontal.</td>
+									</tr>
+									<tr>
+										<td>&lt;html&gt;</td>
+										<td>Etiqueta que indica el inicio y final de un documento HTML.</td>
+									</tr>
+									<tr>
+										<td>&lt;i&gt;</td>
+										<td>Muestra el texto en itálica.</td>
+									</tr>
+									<tr>
+										<td>&lt;iframe&gt;</td>
+										<td>Define una ventana o frame interno.</td>
+									</tr>
+									<tr>
+										<td>&lt;img&gt;</td>
+										<td>Etiqueta para insertar imágenes.</td>
+									</tr>
+									<tr>
+										<td>&lt;input&gt;</td>
+										<td>Añade un cuadro de entrada de texto a un formulario.</td>
+									</tr>
+									<tr>
+										<td>&lt;ins&gt;</td>
+										<td>Indica que el texto a sido insertado en lugar de otro.</td>
+									</tr>
+									<tr>
+										<td>&lt;kbd&gt;</td>
+										<td>Indica texto introducido por medio del teclado.</td>
+									</tr>
+									<tr>
+										<td>&lt;keygen&gt;</td>
+										<td>Encriptar datos de un formulario.</td>
+									</tr>
+									<tr>
+										<td>&lt;label&gt;</td>
+										<td>Define una etiqueta relacionada a un elemento &lt;input&gt; de un formulario.</td>
+									</tr>
+									<tr>
+										<td>&lt;legend&gt;</td>
+										<td>Escribe un nombre o leyenda en un cuadro generado por la etiqueta &lt;fieldset&gt;.</td>
+									</tr>
+									<tr>
+										<td>&lt;li&gt;</td>
+										<td>Define un elemento de una lista.</td>
+									</tr>
+									<tr>
+										<td>&lt;link&gt;</td>
+										<td>Realiza un enlace entre la página y un elemento o recurso externo.</td>
+									</tr>
+									<tr>
+										<td>&lt;main&gt;</td>
+										<td>Indica el contenido principal de una página.</td>
+									</tr>
+									<tr>
+										<td>&lt;map&gt;</td>
+										<td>Permite dividir una imagen para hacer clic en distintas áreas de la misma.</td>
+									</tr>
+									<tr>
+										<td>&lt;mark&gt;</td>
+										<td>Remarca un texto de un color.</td>
+									</tr>
+									<tr>
+										<td>&lt;menu&gt;</td>
+										<td>Permite crear un menú personalizado al hacer clic derecho con el mouse.</td>
+									</tr>
+									<tr>
+										<td>&lt;menuitem&gt;</td>
+										<td>Define un elemento de un menu creado con la etiqueta &lt;menu&gt;.</td>
+									</tr>
+									<tr>
+										<td>&lt;meta&gt;</td>
+										<td>Define los metadatos que van dentro de la etiqueta &lt;heaad&gt;</td>
+									</tr>
+									<tr>
+										<td>&lt;meter&gt;</td>
+										<td>Indica una medida dentro de un rango representada por una barra progresiva.</td>
+									</tr>
+									<tr>
+										<td>&lt;nav&gt;</td>
+										<td>Define una grupo de enlaces de navegación.</td>
+									</tr>
+									<tr>
+										<td>&lt;noframes&gt;</td>
+										<td>Muestra un contenido alterno en caso de que los frames no sean soportados.</td>
+									</tr>
+									<tr>
+										<td>&lt;noscript&gt;</td>
+										<td>Muestra un contenido altero en caso de que un script no sea soportado.</td>
+									</tr>
+									<tr>
+										<td>&lt;object&gt;</td>
+										<td>Insertar objetos embebidos como audio, video o aplets.</td>
+									</tr>
+									<tr>
+										<td>&lt;ol&gt;</td>
+										<td>Define una lista ordenada numericamente o alfabeticamente.</td>
+									</tr>
+									<tr>
+										<td>&lt;optgroup&gt;</td>
+										<td>Agrupa opciones relacionadas en una lista desplegable.</td>
+									</tr>
+									<tr>
+										<td>&lt;option&gt;</td>
+										<td>Define una opcion en una lista desplegable.</td>
+									</tr>
+									<tr>
+										<td>&lt;output&gt;</td>
+										<td>Indica el resultado de salida de una operación.</td>
+									</tr>
+									<tr>
+										<td>&lt;p&gt;</td>
+										<td>Para escribir un párrafo.</td>
+									</tr>
+									<tr>
+										<td>&lt;param&gt;</td>
+										<td>Define paramentros de un objeto de la etiqueta &lt;object&gt;.</td>
+									</tr>
+									<tr>
+										<td>&lt;pre&gt;</td>
+										<td>Etiqueta para escribir texto pre-formateado.</td>
+									</tr>
+									<tr>
+										<td>&lt;progress&gt;</td>
+										<td>Etiqueta para insertar una barra prograsiva.</td>
+									</tr>
+									<tr>
+										<td>&lt;q&gt;</td>
+										<td>Encierra un segmento de texto entre comillas.</td>
+									</tr>
+									<tr>
+										<td>&lt;s&gt;</td>
+										<td>Tacha texto con una linea horizontal.</td>
+									</tr>
+									<tr>
+										<td>&lt;samp&gt;</td>
+										<td>Indica que el texto es un ejemplo de salida de un programa de computadora.</td>
+									</tr>
+									<tr>
+										<td>&lt;script&gt;</td>
+										<td>Etiqueta para insertar un script.</td>
+									</tr>
+									<tr>
+										<td>&lt;section&gt;</td>
+										<td>Define una seccion de la página.</td>
+									</tr>
+									<tr>
+										<td>&lt;select&gt;</td>
+										<td>Define una lista desplegable en un formulario.</td>
+									</tr>
+									<tr>
+										<td>&lt;small&gt;</td>
+										<td>Etiqueta que cambia el texto a un tamaño mas pequeño.</td>
+									</tr>
+									<tr>
+										<td>&lt;source&gt;</td>
+										<td>Indica la dirección de un recurso de audio o video.</td>
+									</tr>
+									<tr>
+										<td>&lt;span&gt;</td>
+										<td>Define una sección de un texto.</td>
+									</tr>
+									<tr>
+										<td>&lt;strike&gt;</td>
+										<td>Indica invalidez a un fragmento de texto tachandolo con una línea horizontal.</td>
+									</tr>
+									<tr>
+										<td>&lt;strong&gt;</td>
+										<td>Marca texto importante del documento en negrita.</td>
+									</tr>
+									<tr>
+										<td>&lt;style&gt;</td>
+										<td>Etiqueta para agregar un estilo CSS dentro del documento HTML.</td>
+									</tr>
+									<tr>
+										<td>&lt;sub&gt;</td>
+										<td>Indicar una subíndice.</td>
+									</tr>
+									<tr>
+										<td>&lt;summary&gt;</td>
+										<td>Define un encabezado visible dentro de una etiqueta &lt;details&gt;</td>
+									</tr>
+									<tr>
+										<td>&lt;sup&gt;</td>
+										<td>Indicar una superíndice.</td>
+									</tr>
+									<tr>
+										<td>&lt;table&gt;</td>
+										<td>Inserta una tabla en la página.</td>
+									</tr>
+									<tr>
+										<td>&lt;tbody&gt;</td>
+										<td>Define el cuerpo de una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;td&gt;</td>
+										<td>Agregar una columna en una tabla</td>
+									</tr>
+									<tr>
+										<td>&lt;textarea&gt;</td>
+										<td>Define un área de texto para ingresar texto desde un formulario.</td>
+									</tr>
+									<tr>
+										<td>&lt;tfoot&gt;</td>
+										<td>Indica el contenido que forma el pie de una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;th&gt;</td>
+										<td>Agrega una "columa encabezado" a una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;thead&gt;</td>
+										<td>Define el encabezado de una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;time&gt;</td>
+										<td>Indica una hora o fecha.</td>
+									</tr>
+									<tr>
+										<td>&lt;title&gt;</td>
+										<td>Indica el título de la página.</td>
+									</tr>
+									<tr>
+										<td>&lt;tr&gt;</td>
+										<td>Inserta una fila o renglón en una tabla.</td>
+									</tr>
+									<tr>
+										<td>&lt;track&gt;</td>
+										<td>Especifica tracks de texto para elementos multimedia de audio o video.</td>
+									</tr>
+									<tr>
+										<td>&lt;tt&gt;</td>
+										<td>Texto teletipo.</td>
+									</tr>
+									<tr>
+										<td>&lt;u&gt;</td>
+										<td>Definir texto subrayado.</td>
+									</tr>
+									<tr>
+										<td>&lt;ul&gt;</td>
+										<td>Define una lista</td>
+									</tr>
+									<tr>
+										<td>&lt;var&gt;</td>
+										<td>Indica que el texto es una variable.</td>
+									</tr>
+									<tr>
+										<td>&lt;video&gt;</td>
+										<td>Insertar un video.</td>
+									</tr>
+									<tr>
+										<td>&lt;wbr&gt;</td>
+										<td>Indica un posible cambio de linea en el texto segun el tamaño del contenedor.</td>
+									</tr>
+								</tbody>
+							</table>
+						</details>
+						<div><p><span>Por <em>Rasputín</em></span>  <span>hace 1 semana</span></p></div>
+					</section>
+					<section>
+						<h3>Audio de inicio.</h3>
+						<details>
+							<summary>
+								<p>Audio descargado de Youtube, que da paso a la intro de un video</p></summary>
+							<audio src="media/audio.mp3" controls></audio>						
+						</details>
+						<div><p><span>Por <em>Rasputín</em></span>  <span>hace 1 semana</span></p></div>
+					</section>
+                    <section id="video">
+                        <h3>El vídeo más cañero</h3>
+                        <video width="480" height="320" controls>
+                            <source src="media/video_examen.mp4" type="video/mp4" />
+                            <img src="img/prev_video_examen.png" alt="Review" />
+                        </video>
+                    </section>
+				</article>
+				<aside>
+					<div class="antsig"><b>Artículo Anterior:</b><br /><a href="#">¿Qué es CSS?</a></div>
+					<div class="antsig"><b>Siguiente Artículo:</b><br /><a href="#">¿Qué es PHP</a></div>
+				</aside>
+			</main>
+		</div>
+		<footer>
+			<p>UniWebsidad TIC   |   Departamento de Informática</p>
+			<p>Diseñado por <a href="index.html">@grufu €studios</a></p>
+		</footer>
+	</body>
+</html>
